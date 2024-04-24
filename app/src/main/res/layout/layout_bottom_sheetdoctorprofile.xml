@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/bottomsheetcontainer"
+    android:layout_height="580dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bottomsheetbg"
+    android:layout_marginTop="100dp"
+
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:paddingTop="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+
+
+            <LinearLayout
+                android:layout_marginStart="15dp"
+                android:id="@+id/imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+
+                >
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/dish_img1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/img_1"
+                    android:scaleType="centerCrop"
+                    app:civ_border_color="#FF000000"/>
+
+                <!--                <ImageView-->
+                <!--                    android:layout_width="100dp"-->
+                <!--                    android:layout_height="100dp"-->
+                <!--                    android:layout_gravity="center_vertical"-->
+                <!--                    android:src="@drawable/img"></ImageView>-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="right"
+                android:layout_gravity="right"
+                android:id="@+id/cust_name_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/imageview"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:id="@+id/med_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Vasudev Raut"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    ></TextView>
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingEnd="20dp"
+                    android:layout_height="wrap_content">
+
+
+
+
+
+
+
+
+                    <ImageView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:src="@drawable/baseline_star_24"
+                        />
+
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="4.9 (11reviews"
+                        android:layout_marginStart="10dp"
+                        />
+
+
+
+                </LinearLayout>
+                <TextView
+                    android:visibility="gone"
+                    android:background="@drawable/schedulecard"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:text="Top Doctor"
+                    />
+
+                <TextView
+
+                    android:id="@+id/bio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Good experince in General firm and lots of new expeerience "
+                    android:textColor="#008000"
+                    android:textSize="13sp"
+                    ></TextView>
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/experience"/>
+
+        <TextView
+            android:layout_marginStart="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3 Years"
+            />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_message_24"/>
+
+            <TextView
+                android:layout_marginStart="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="36 Bookings"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#eef3f7"/>
+
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:id="@+id/meta"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/meta"/>
+
+            <ImageView
+
+                android:layout_marginStart="10dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toEndOf="@id/meta"
+                android:id="@+id/insta"
+                android:src="@drawable/img_3"/>
+
+            <ImageView
+
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/insta"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/img_4"/>
+
+            <ImageView
+
+                android:visibility="gone"
+                android:layout_alignParentRight="true"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="30dp"
+                android:src="@drawable/fav"/>
+
+
+
+
+
+
+        </RelativeLayout>
+        <TextView
+            android:text="View Document"
+            android:padding="10dp"
+            android:id="@+id/viewDocument"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/schedulecard"/>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Uplode Document"
+                android:textAlignment="center"
+                android:id="@+id/uplode"
+                android:background="@drawable/schedulecard"
+                android:padding="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"/>
+
+
+            <TextView
+                android:visibility="gone"
+                 android:layout_marginStart="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Send"
+                android:padding="10dp"
+                android:background="@drawable/schedulecard"
+                android:layout_weight="1"/>
+
+
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/sevices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp" />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

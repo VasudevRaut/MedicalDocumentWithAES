@@ -1,0 +1,35 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.DFCSProject" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">#83C3B5</item>
+        <item name="colorPrimaryVariant">#B50482FF</item>
+        <item name="colorOnPrimary">#B50482FF</item>
+    </style>
+
+    <style name="Theme.DFCSProject" parent="Base.Theme.DFCSProject" />
+    <style name="BottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+
+
+        <item name="bottomSheetStyle">@style/BottomSheetStyle</item>
+
+    </style>
+    <style name="BottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+
+
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="ImageView.Round" parent="">
+        <item name="cornerSize">50%</item>
+    </style>
+    <style name="ImageView.SmallRound" parent="">
+        <item name="cornerSize">10%</item>
+    </style>
+    <style name="ImageView.roundedRectangle" parent="">
+        <item name="cornerSize">5%</item>
+    </style>
+
+
+</resources>

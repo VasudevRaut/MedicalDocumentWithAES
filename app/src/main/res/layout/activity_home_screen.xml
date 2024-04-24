@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@color/cl_black"
+
+    tools:context=".HomeScreen">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+
+        android:layout_marginTop="10dp"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="0dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="MySpace"
+            android:textColor="@color/cl_green"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Your personalized gateway to everything you need"
+            android:textColor="@color/cl_faint_green"
+            android:textSize="10sp" />
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!-- Card 1 -->
+                <LinearLayout
+                    android:id="@+id/responces"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/edittext_background"
+
+                    app:cardCornerRadius="15dp">
+
+                    <LinearLayout
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <!-- Image -->
+                        <com.google.android.material.imageview.ShapeableImageView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/requvestimg"
+                            app:shapeAppearanceOverlay="@style/ImageView.SmallRound" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <!-- Title -->
+                            <TextView
+
+                                android:layout_width="300dp"
+                                android:layout_height="wrap_content"
+
+                                android:text="Veiw Response"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <!-- Subtitle -->
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:text="Empowering informed decisions with comprehensive insights derived from lab tests and medical consultations."
+                                android:textColor="@android:color/black"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <!-- Card 1 -->
+                <LinearLayout
+                    android:id="@+id/doctorList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/edittext_background"
+
+                    app:cardCornerRadius="15dp">
+
+                    <LinearLayout
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <!-- Image -->
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/white"
+
+                            android:scaleType="centerInside"
+
+                            android:src="@drawable/doctorimg"
+                            app:shapeAppearanceOverlay="@style/ImageView.SmallRound" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <!-- Title -->
+                            <TextView
+
+                                android:layout_width="300dp"
+                                android:layout_height="wrap_content"
+
+                                android:text="Doctor List"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"
+
+                                android:textStyle="bold" />
+
+                            <!-- Subtitle -->
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:text="Providing compassionate care and healing expertise, one patient at a time."
+                                android:textColor="@android:color/black"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <!-- Card 1 -->
+                <LinearLayout
+                    android:id="@+id/lablist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/edittext_background"
+
+                    app:cardCornerRadius="15dp">
+
+                    <LinearLayout
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <!-- Image -->
+                        <com.google.android.material.imageview.ShapeableImageView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+
+                            android:src="@drawable/labimg"
+                            app:shapeAppearanceOverlay="@style/ImageView.SmallRound" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <!-- Title -->
+                            <TextView
+
+                                android:layout_width="300dp"
+                                android:layout_height="wrap_content"
+
+                                android:text="Laboratory "
+                                android:textColor="@color/black"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <!-- Subtitle -->
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:text="Delving deep into evidence to uncover the hidden narratives of justice and truth."
+                                android:textColor="@android:color/black"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <!-- Card 1 -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:id="@+id/medicallist"
+                    android:background="@drawable/edittext_background"
+
+                    app:cardCornerRadius="15dp">
+
+                    <LinearLayout
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <!-- Image -->
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/medicalimg"
+                            app:shapeAppearanceOverlay="@style/ImageView.SmallRound" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <!-- Title -->
+                            <TextView
+
+                                android:layout_width="300dp"
+                                android:layout_height="wrap_content"
+
+                                android:text="Medical"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <!-- Subtitle -->
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:text="Preserving health, one diagnosis at a time"
+                                android:textColor="@android:color/black"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/Historys"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/edittext_background"
+
+                    app:cardCornerRadius="15dp">
+
+                    <LinearLayout
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <!-- Image -->
+                        <com.google.android.material.imageview.ShapeableImageView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/doctorimg"
+                            app:shapeAppearanceOverlay="@style/ImageView.SmallRound" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <!-- Title -->
+                            <TextView
+
+                                android:layout_width="300dp"
+                                android:layout_height="wrap_content"
+
+                                android:text="History"
+                                android:textColor="@color/secondary_white"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <!-- Subtitle -->
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:text="Explore your journey in electric vehicle charging"
+                                android:textColor="@android:color/darker_gray"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/card"
+    android:layout_height="130dp"
+    android:orientation="horizontal"
+    android:layout_marginBottom="10dp"
+
+    android:background="@drawable/schedulecard">
+
+
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+
+
+            <LinearLayout
+                android:layout_marginStart="15dp"
+                android:id="@+id/imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+
+           >
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/dish_img1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/img_1"
+                    android:scaleType="centerCrop"
+                    app:civ_border_color="#FF000000"/>
+
+<!--                <ImageView-->
+<!--                    android:layout_width="100dp"-->
+<!--                    android:layout_height="100dp"-->
+<!--                    android:layout_gravity="center_vertical"-->
+<!--                    android:src="@drawable/img"></ImageView>-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="right"
+                android:layout_gravity="right"
+                android:id="@+id/cust_name_linear"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/imageview"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:id="@+id/med_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Vasudev Raut"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    ></TextView>
+
+
+
+                <TextView
+
+                    android:id="@+id/bio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Good experince in General firm and lots of new expeerience "
+                    android:textColor="#008000"
+                    android:textSize="13sp"
+                    ></TextView>
+
+
+
+                <LinearLayout
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingEnd="20dp"
+                    android:layout_height="wrap_content">
+
+
+
+
+
+
+
+
+                    <ImageView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:src="@drawable/experience"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="7 Years"
+                        android:layout_marginStart="10dp"
+                        />
+
+
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/expperience"
+                    android:background="@drawable/schedulecard"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:text="#Experience"
+                    />
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+</LinearLayout>

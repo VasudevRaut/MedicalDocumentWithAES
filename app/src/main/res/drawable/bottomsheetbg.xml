@@ -1,0 +1,23 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Shape with rounded corners -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:topLeftRadius="20dp"
+                android:topRightRadius="20dp"/>
+            <solid android:color="@color/white"/>
+        </shape>
+    </item>
+    <!-- White border -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:topLeftRadius="22dp"
+                android:topRightRadius="22dp"
+
+                />
+            <solid android:color="@color/white"/>
+            <stroke
+                android:width="2dp"
+                android:color="#FFFFFF"/>
+        </shape>
+    </item>
+</layer-list>
